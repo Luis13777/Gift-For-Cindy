@@ -29,6 +29,7 @@
       font-size: 1.2rem;
     }
 
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -45,6 +46,15 @@
       transition: transform 0.3s ease;
     }
 
+    /* regra mais específica para sobrescrever .gallery img */
+    .gallery img.alt,
+    .gallery img.alt:focus,
+    .gallery img.alt:active {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+
     .gallery img:hover {
       transform: scale(1.05);
     }
@@ -55,6 +65,7 @@
       margin: 20px;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
     }
 
     .text-section h2 {
@@ -64,9 +75,9 @@
     }
 
     .text-section p {
-      line-height: 1.6;
+      line-height: 1.9;
       font-size: 1.1rem;
-      text-align: justify;
+      text-align: center;
     }
 
     footer {
@@ -80,31 +91,299 @@
 <body>
 
   <header>
-    <h1>Quatro Anos de Nós ❤️</h1>
-    <p>Um pedacinho da nossa história em fotos e palavras</p>
+    <h1>❤️ Four years of C+L ❤️</h1>
   </header>
 
+  <section class="text-section">
+    <h2>💕 A little of our story 💕</h2>
+    <p> How could we ever imagine that a simple "hello" would lead us to this beautiful journey together? Every since the day we met at August 25th loving you was inevitable and honestly the happiest part of my life 🥹❤️. <br>
+      
+    Let's review all our moments that make our love so great. </p>
+  </section>
+
   <section class="gallery">
-    <!-- Substitua pelos caminhos das suas fotos -->
     <img src="images/foto1.jpg" alt="Nossa foto 1">
-    <img src="images/foto2.jpg" alt="Nossa foto 2">
-    <img src="images/foto3.jpg" alt="Nossa foto 3">
-    <img src="images/foto4.jpg" alt="Nossa foto 4">
-    <img src="images/foto5.jpg" alt="Nossa foto 5">
-    <img src="images/foto6.jpg" alt="Nossa foto 6">
+    <img class="alt" src="images/CL.png" alt="Nossa foto 2">
+    <img src="images/foto0.jpg" alt="Nossa foto 3">
   </section>
 
   <section class="text-section">
-    <h2>Um Pouco da Nossa História</h2>
-    <p>
-      <!-- Aqui você escreve o que quiser -->
-      Coloque aqui um texto sobre vocês, lembranças, momentos especiais e o que deseja para o futuro.  
-      Pode ser algo romântico, divertido ou até mesmo dividido em pequenos parágrafos contando etapas da relação.
-    </p>
+    <h2> 1st year </h2>
+    <p> The year where everything started. When we feel in love with each other, had our first calls together, first gifts and so much love. </p>
+  </section>
+
+  <section class="gallery">
+    <img src="images/foto4.jpg" alt="Nossa foto 1">
+    <img src="images/foto5.jpg" alt="Nossa foto 2">
+    <img src="images/foto6.jpg" alt="Nossa foto 3">
+    <img src="images/foto3.jpg" alt="Nossa foto 3">
+    <img src="images/foto7.jpg" alt="Nossa foto 3">
+  </section>
+
+  <section class="text-section">
+    <h2> 2nd year </h2>
+    <p> A year where everything started when we feel in love and had our first calls together. </p>
+  </section>
+
+  <section class="gallery">
+    <img class="alt" src="images/bubuandudu2.png" alt="Nossa foto 1">
+    <img class="alt" src="images/bubuandudu.png" alt="bubu">
+    <img class="alt" src="images/bubuandudu3.png" alt="Nossa foto 3">
+  </section>
+
+  <section class="text-section">
+    <h2> Our first trip together </h2>
+    <p> When we finally had the chance to put our hearts together. </p>
+  </section>
+
+  <section class="gallery">
+    <img src="images/1viagem5.jpg" alt="Nossa foto 1">
+    <img src="images/1viagem6.jpg" alt="Nossa foto 1">
+    <img src="images/1viagem0.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Going to the beach </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/1viagem1.jpg" alt="Nossa foto 1">
+    <img src="images/1viagem2.jpg" alt="Nossa foto 1">
+    <img src="images/1viagem3.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Enjoying the beach and some pastel 😋 </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/1viagem7.jpg" alt="Nossa foto 1">
+    <img src="images/1viagem8.jpg" alt="Nossa foto 1">
+    <img src="images/1viagem9.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Seeing my school and having to say goodbye 😭 </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/1viagem10.jpg" alt="Nossa foto 1">
+    <img src="images/1viagem11.jpg" alt="Nossa foto 1">
+    <img src="images/1viagem12.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Our second trip together </h2>
+    <p> We enjoyed so much being together that we met again very quick and got the chance to know São Paulo together. </p>
+  </section>
+
+  <section class="gallery">
+    <img src="images/2viagem0.jpg" alt="Nossa foto 1">
+    <img src="images/2viagem1.jpg" alt="Nossa foto 1">
+    <img src="images/2viagem2.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Exploring São Paulo </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/2viagem3.jpg" alt="Nossa foto 1">
+    <img src="images/2viagem5.jpg" alt="Nossa foto 1">
+    <img src="images/2viagem6.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Us leaving São Paulo </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/2viagem7.jpg" alt="Nossa foto 1">
+    <img src="images/2viagem9.jpg" alt="Nossa foto 1">
+    <img src="images/2viagem10.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Enjoying our dates in the mall </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/2viagem11.jpg" alt="Nossa foto 1">
+    <img src="images/2viagem12.jpg" alt="Nossa foto 1">
+    <img src="images/2viagem15.jpg" alt="Nossa foto 1">
+  </section>
+
+
+  <section class="text-section">
+    <h2> 3rd year </h2>
+    <p> A year when we feel even more in love. </p>
+  </section>
+
+
+  <section class="gallery">
+    <img class="alt" src="images/bubuandudu5.png" alt="Nossa foto 1">
+    <img class="alt" src="images/bubuandudu4.png" alt="bubu">
+    <img class="alt" src="images/bubuandudu6.png" alt="Nossa foto 3">
+  </section>
+
+  <section class="text-section">
+    <h2> Our 3rd trip going home </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/3viagem1.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem2.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem3.jpg" alt="Nossa foto 1">
+  </section>
+
+
+  <section class="text-section">
+    <h2> Us travelling around Brazil </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/3viagem4.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem5.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem6.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> You all happy seeing the falls 😄 </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/3viagem7.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem8.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem10.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Visitting more places in Brazil </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/3viagem21.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem22.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem16.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem11.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Spending the new year together </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/3viagem20.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem17.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem12.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> Us in some dates back at home and you leaving again 😭 </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/3viagem13.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem14.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem15.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem19.jpg" alt="Nossa foto 1">
+    <img src="images/3viagem24.jpg" alt="Nossa foto 1">
+  </section>
+
+  <section class="text-section">
+    <h2> 4th year </h2>
+    <p> The year we finally had the chance to experience a little of what is life together </p>
+  </section>
+
+
+  <section class="gallery">
+    <img class="alt" src="images/bubuandudu5.png" alt="Nossa foto 1">
+    <img class="alt" src="images/bubuandudu4.png" alt="bubu">
+    <img class="alt" src="images/bubuandudu6.png" alt="Nossa foto 3">
+  </section>
+
+  <section class="text-section">
+    <h2> Our 4th trip going home </h2>
+  </section>
+
+  <section class="text-section">
+    <h2> Living our life in São Paulo together </h2>
+  </section>
+
+
+  <section class="gallery">
+    <img src="images/4viagem17.jpg" alt="foto 17">
+    <img src="images/4viagem18.jpg" alt="foto 18">
+    <img src="images/4viagem19.jpg" alt="foto 19">
+    <img src="images/4viagem25.jpg" alt="foto 25">
+    <img src="images/4viagem26.jpg" alt="foto 26">
+    <img src="images/4viagem27.jpg" alt="foto 27">
+    <img src="images/4viagem28.jpg" alt="foto 28">
+    <img src="images/4viagem35.jpg" alt="foto 35">
+    <img src="images/4viagem36.jpg" alt="foto 36">
+    <img src="images/4viagem37.jpg" alt="foto 37">
+    <img src="images/4viagem38.jpg" alt="foto 38">
+    <img src="images/4viagem39.jpg" alt="foto 39">
+    <img src="images/4viagem40.jpg" alt="foto 40">
+    <img src="images/4viagem41.jpg" alt="foto 41">
+  </section>
+
+  <section class="text-section">
+    <h2> Travelling to the south of Brazil </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/4viagem0.jpg" alt="foto 0">
+    <img src="images/4viagem1.jpg" alt="foto 1">
+    <img src="images/4viagem2.jpg" alt="foto 2">
+    <img src="images/4viagem3.jpg" alt="foto 3">
+    <img src="images/4viagem4.jpg" alt="foto 4">
+    <img src="images/4viagem5.jpg" alt="foto 5">
+    <img src="images/4viagem6.jpg" alt="foto 6">
+    <img src="images/4viagem7.jpg" alt="foto 7">
+    <img src="images/4viagem8.jpg" alt="foto 8">
+    <img src="images/4viagem9.jpg" alt="foto 9">
+    <img src="images/4viagem10.jpg" alt="foto 10">
+    <img src="images/4viagem11.jpg" alt="foto 11">
+    <img src="images/4viagem12.jpg" alt="foto 12">
+    <img src="images/4viagem13.jpg" alt="foto 13">
+    <img src="images/4viagem14.jpg" alt="foto 14">
+    <img src="images/4viagem15.jpg" alt="foto 15">
+    <img src="images/4viagem16.jpg" alt="foto 16">
+  </section>
+
+  <section class="text-section">
+    <h2> Watching Corinthians together </h2>
+  </section>
+
+  
+  <section class="gallery">
+    <img src="images/4viagem20.jpg" alt="foto 20">
+    <img src="images/4viagem21.jpg" alt="foto 21">
+    <img src="images/4viagem22.jpg" alt="foto 22">
+    <img src="images/4viagem23.jpg" alt="foto 23">
+    <img src="images/4viagem24.jpg" alt="foto 24">
+    <img src="images/4viagem29.jpg" alt="foto 29">
+    <img src="images/4viagem30.jpg" alt="foto 30">
+    <img src="images/4viagem31.jpg" alt="foto 31">
+    <img src="images/4viagem32.jpg" alt="foto 32">
+    <img src="images/4viagem33.jpg" alt="foto 33">
+    <img src="images/4viagem34.jpg" alt="foto 34">
+  </section>
+
+  <section class="text-section">
+    <h2> Our last day together </h2>
+  </section>
+
+  <section class="gallery">
+    <img src="images/4viagem42.jpg" alt="foto 42">
+    <img src="images/4viagem43.jpg" alt="foto 43">
+    <img src="images/4viagem44.jpg" alt="foto 44">
+    <img src="images/4viagem45.jpg" alt="foto 45">
   </section>
 
   <footer>
-    Feito com ❤️ por Luis para [nome dela]
+    Feito com ❤️ por Luís para Cindy
   </footer>
 
 </body>
